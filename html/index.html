@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <title>dayrate</title>
+
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="styles.css"></link>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <div class="history_wrapper" style="display: none;"></div>
+            <div class="input_wrapper">
+                <div class="input_type_wrapper"id="input_plan_worked">
+                    <div class="input_title">Konnte der Plan eingehalten werden?</div>
+                    <div class="input_buttons_wrapper">
+                        <div onclick="oc(0)" id="input_button_plan_worked_bad" class="input_button input_button_bad"></div>
+                        <div onclick="oc(1)" id="input_button_plan_worked_medium" class="input_button input_button_medium"></div>
+                        <div onclick="oc(2)" id="input_button_plan_worked_good" class="input_button input_button_good"></div>
+                    </div>
+                </div>
+                <div class="input_type_wrapper"id="input_how_hard">
+                    <div class="input_title">Wie schwer war es, den Plan einzuhalten</div>
+                    <div class="input_buttons_wrapper">
+                        <div onclick="oc(3)" id="input_button_how_hard_bad" class="input_button input_button_bad"></div>
+                        <div onclick="oc(4)" id="input_button_how_hard_medium" class="input_button input_button_medium"></div>
+                        <div onclick="oc(5)" id="input_button_how_hard_good" class="input_button input_button_good"></div>
+                    </div>
+                </div>
+                <div class="input_type_wrapper" id="input_buffer">
+                    <div class="input_title">Hat der Puffer gereicht?</div>
+                    <div class="input_buttons_wrapper">
+                        <div onclick="oc(6)" id="input_button_buffer_no" class="input_button input_button_no">Nein</div>
+                        <div onclick="oc(7)" id="input_button_buffer_yes" class="input_button input_button_yes">Ja</div>
+                    </div>
+                </div>
+                <div class="input_type_wrapper" id="input_comment">
+                    <div class="input_title">Anmerkungen</div>
+                    <div class="input_buttons_wrapper">
+                        <textarea id="input_textarea_comment" type="text" class="input_textarea"></textarea>
+                    </div>
+                </div>
+                <div class="submit_wrapper">
+                    <div onclick="submit()" class="input_button input_button_submit">Submit</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

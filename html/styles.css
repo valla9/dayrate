@@ -1,0 +1,116 @@
+:root{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+
+
+    --color_green1: #62c44f;
+    --color_yellow1: #c49f4f;
+    --color_red1: #c44f61;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:linear-gradient(25deg, #444, #999);
+    background-color: black;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    align-items: center;
+}
+
+.history_wrapper, .input_wrapper{
+    width: 40vw;
+    height: 70vh;
+    border-radius: 2vw;
+    background: white;
+}
+
+.input_type_wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.input_title{
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.input_buttons_wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.input_button{
+    width: 5vw;
+    height: 5vw;
+    border-radius: 1vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.input_button_bad{
+    background-color: var(--color_red1);
+}
+
+.input_button_medium{
+    background-color: var(--color_yellow1);
+}
+
+.input_button_good{
+    background-color: var(--color_green1);
+}
+
+.input_button_yes{
+    background-color: var(--color_green1);
+}
+
+.input_button_no{
+    background-color: var(--color_red1);
+}
+
+.input_textarea{
+    width: 30vw;
+    height: max-content
+}
+
+.submit_wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+.input_button_submit{
+    width: 20vw !important; 
+    height: 3vw !important;
+    background-color: #327fa8;
+    font-size: 1.5em;
+    color: white;
+}
+
+.input_button:hover{
+    transform: scale(1.1);
+    transition: 200ms;
+}
