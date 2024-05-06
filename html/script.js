@@ -37,5 +37,5 @@ function submit(){
         //anmerkung auslesen
         let comment = document.getElementById("input_textarea_comment").value;
 
-        window.location = "/html/submit.php?p=" + plan_worked + "&h=" + how_hard + "$b=" + buffer + "&c=" + comment;
+        window.location = "/submit.php?p=" + plan_worked + "&h=" + how_hard + "$b=" + buffer + "&c=" + comment;
 }
