@@ -1,3 +1,3 @@
 <?php
-$_GET['p']
+print($_GET['p'])
 ?>
